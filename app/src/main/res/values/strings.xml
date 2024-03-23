@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">SchoolERP</string>
+    <string name="_91">+91-</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="_1234567890">1234567890</string>
+    <string name="enter_the_otp_sent_to">Enter the OTP sent</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="didn_t_recieve_the_otp">Didn\'t recieve the OTP?</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="verify">Verify</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_accountr">Don\'t have an accountr?</string>
+    <string name="create">Create</string>
+    <string name="signup">SignUp</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="already_have_an_account">Already have an account.</string>
 </resources>

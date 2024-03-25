@@ -5,5 +5,7 @@
     <color name="yellow">#F6C611</color>
     <color name="grey">#FF474540</color>
     <color name="purple">#171313</color>
-    <color name="dark_yellow">#FAC21F</color>
+    <color name="darkyellow">#FFC107</color>
+
 </resources>
+

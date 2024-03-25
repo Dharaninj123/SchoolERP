@@ -23,7 +23,7 @@ public class SplashActivity extends AppCompatActivity {
 return insets;
         });
 
-        Intent iHome = new Intent(SplashActivity.this, SendOTPActivity.class);
+        Intent iHome = new Intent(SplashActivity.this, LoginActivity.class);
 
         new Handler().postDelayed(new Runnable() {
             @Override

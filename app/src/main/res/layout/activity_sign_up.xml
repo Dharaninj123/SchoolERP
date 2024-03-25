@@ -29,7 +29,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Sign Up"
+                android:text="@string/signup"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="28sp"
@@ -42,10 +42,12 @@
                 android:layout_marginTop="40dp"
                 android:backgroundTint="@color/white"
                 android:background="@color/white"
-                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawableStart="@drawable/baseline_person_24"
                 android:drawablePadding="8dp"
-                android:hint="Name"
+                android:hint="@string/name"
                 android:padding="8dp"
+                android:autofillHints="name"
+                android:inputType="text"
                 android:textColor="@color/black"
                 android:textColorHint="@color/grey" />
 
@@ -56,10 +58,12 @@
                 android:layout_marginTop="20dp"
                 android:backgroundTint="@color/white"
                 android:background="@color/white"
-                android:drawableLeft="@drawable/baseline_date_range_24"
+                android:drawableStart="@drawable/baseline_date_range_24"
                 android:drawablePadding="8dp"
-                android:hint="DOB"
+                android:hint="@string/dob"
                 android:padding="8dp"
+                android:autofillHints="dob"
+                android:inputType="number"
                 android:textColor="@color/black"
                 android:textColorHint="@color/grey" />
 
@@ -70,11 +74,12 @@
                 android:layout_marginTop="20dp"
                 android:backgroundTint="@color/white"
                 android:background="@color/white"
-                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawableStart="@drawable/baseline_lock_24"
                 android:drawablePadding="8dp"
-                android:hint="password"
-                android:inputType="textPassword"
+                android:hint="@string/password"
                 android:padding="8dp"
+                android:autofillHints="password"
+                android:inputType="textPassword"
                 android:textColor="@color/black"
                 android:textColorHint="@color/grey" />
 
@@ -85,11 +90,12 @@
                 android:layout_marginTop="20dp"
                 android:backgroundTint="@color/white"
                 android:background="@color/white"
-                android:drawableLeft="@drawable/baseline_lock_person_24"
+                android:drawableStart="@drawable/baseline_lock_person_24"
                 android:drawablePadding="8dp"
-                android:hint="confirm password"
-                android:inputType="textPassword"
+                android:hint="@string/confirm_password"
                 android:padding="8dp"
+                android:autofillHints="password"
+                android:inputType="textPassword"
                 android:textColor="@color/black"
                 android:textColorHint="@color/grey" />
 

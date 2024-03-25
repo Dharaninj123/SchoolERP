@@ -29,26 +29,26 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Login"
+                android:text="@string/login"
                 android:textColor="@color/black"
                 android:textAlignment="center"
                 android:textSize="28sp"
                 android:textStyle="bold" />
 
-
-
             <EditText
-                android:id="@+id/login_phone_number"
+                android:id="@+id/login_mobile_number"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="40dp"
                 android:backgroundTint="@color/white"
-                android:drawableLeft="@drawable/baseline_local_phone_24"
+                android:drawableStart="@drawable/baseline_local_phone_24"
                 android:background="@color/white"
                 android:drawablePadding="8dp"
-                android:hint="phone number"
+                android:hint="@string/mobile_number"
                 android:textColorHint="@color/grey"
                 android:textColor="@color/black"
+                android:autofillHints="Mobile number"
+                android:inputType="number"
                 android:padding="8dp"/>
 
             <EditText
@@ -57,13 +57,14 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp"
                 android:backgroundTint="@color/white"
-                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawableStart="@drawable/baseline_lock_24"
                 android:background="@color/white"
                 android:drawablePadding="8dp"
-                android:hint="password"
+                android:hint="@string/password"
                 android:textColorHint="@color/grey"
-                android:inputType="textPassword"
                 android:textColor="@color/black"
+                android:autofillHints="password"
+                android:inputType="textPassword"
                 android:padding="8dp"/>
 
             <Button
@@ -76,7 +77,7 @@
                 android:textSize="18sp" />
 
             <Button
-                android:id="@+id/forgotpassword"
+                android:id="@+id/forgotpw"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="123dp"
@@ -112,10 +113,7 @@
 
             </LinearLayout>
 
-
-
         </LinearLayout>
-
 
     </androidx.cardview.widget.CardView>
 

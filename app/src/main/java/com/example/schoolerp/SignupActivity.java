@@ -28,6 +28,7 @@ public class SignupActivity extends AppCompatActivity {
 
 
     EditText signup_name, signup_dob, signup_password, signup_confirm_password;
+    private Calendar calendar;
 
 
     @Override
@@ -98,22 +99,26 @@ public class SignupActivity extends AppCompatActivity {
         Intent intent = new Intent(SignupActivity.this, LoginActivity.class);
         startActivity(intent);
     }
-    private void showDatePickerDialog() {
+
+    public void sign_dob(View view) {
         // Get current date to set as default in the date picker dialog
         Calendar calendar = Calendar.getInstance();
         int year = calendar.get(Calendar.YEAR);
         int month = calendar.get(Calendar.MONTH);
         int dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH);
 
-        // Create a date picker dialog
+        showDatePickerDialog(year, month, dayOfMonth);
+    }
+
+    private void showDatePickerDialog(int year, int month, int dayOfMonth) {
         DatePickerDialog datePickerDialog = new DatePickerDialog(
                 this,
                 new DatePickerDialog.OnDateSetListener() {
-
                     @Override
                     public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
                         // Update the EditText with the selected date
                         String selectedDate = dayOfMonth + "/" + (monthOfYear + 1) + "/" + year;
+                        EditText signup_dob = findViewById(R.id.signup_dob); // Replace with your EditText id
                         signup_dob.setText(selectedDate);
                     }
                 },
@@ -123,3 +128,5 @@ public class SignupActivity extends AppCompatActivity {
         datePickerDialog.show();
     }
 }
+
+

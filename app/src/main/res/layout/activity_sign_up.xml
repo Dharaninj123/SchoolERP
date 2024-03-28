@@ -56,14 +56,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp"
-                android:backgroundTint="@color/white"
+                android:autofillHints="dob"
                 android:background="@color/white"
+                android:backgroundTint="@color/white"
                 android:drawableStart="@drawable/baseline_date_range_24"
                 android:drawablePadding="8dp"
                 android:hint="@string/dob"
-                android:padding="8dp"
-                android:autofillHints="dob"
                 android:inputType="number"
+                android:onClick="sign_dob"
+                android:padding="8dp"
                 android:textColor="@color/black"
                 android:textColorHint="@color/grey" />
 

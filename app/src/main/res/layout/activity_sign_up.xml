@@ -81,7 +81,9 @@
                 android:autofillHints="password"
                 android:inputType="textPassword"
                 android:textColor="@color/black"
-                android:textColorHint="@color/grey" />
+                android:textColorHint="@color/grey"
+                app:counterEnabled="true"
+                app:counterMaxLength="16"/>
 
             <EditText
                 android:id="@+id/signup_confirm_password"
@@ -97,7 +99,9 @@
                 android:autofillHints="password"
                 android:inputType="textPassword"
                 android:textColor="@color/black"
-                android:textColorHint="@color/grey" />
+                android:textColorHint="@color/grey"
+                app:counterEnabled="true"
+                app:counterMaxLength="16" />
 
             <Button
                 android:id="@+id/signup_button"
